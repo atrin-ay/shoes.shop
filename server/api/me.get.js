@@ -35,30 +35,3 @@ export default defineEventHandler(async (event) => {
     }) 
 
 
-
-
-// const {apim} = useRuntimeConfig()
-
-//         export default defineEventHandler(async (event) => {
-            
-//            const token = getCookie(event,'tokenm') 
-        
-
- 
-    
-//     try {
-   
-//         const data = await $fetch(`${apim}/api/me` , {
-//             headers: token
-            
-//         })
-//    console.log(token)
-//          console.log(data)
-//         return data;
-//     } catch (error) {
-//         console.log(error.data );
-//         return error
-//     }
-
-  
-// }) 

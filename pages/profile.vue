@@ -172,24 +172,7 @@ window.location.reload(true)
       erroralert.value=true
       console.log(error);  }
 };
-const slides = ref([
-  {
-    items: [
-      { title: 'محصول 1', description: 'توضیحات محصول 1', image: 'https://via.placeholder.com/200' },
-      { title: 'محصول 2', description: 'توضیحات محصول 2', image: 'https://via.placeholder.com/200' },
-      { title: 'محصول 3', description: 'توضیحات محصول 3', image: 'https://via.placeholder.com/200' },
-    ],
-  },
-  {
-    items: [
-      { title: 'محصول 4', description: 'توضیحات محصول 4', image: 'https://via.placeholder.com/200' },
-      { title: 'محصول 5', description: 'توضیحات محصول 5', image: 'https://via.placeholder.com/200' },
-      { title: 'محصول 6', description: 'توضیحات محصول 6', image: 'https://via.placeholder.com/200' },
-    ],
-  },
-]);
 
-// تابع برای افزودن محصول به سبد خرید
 const addToCart = (item) => {
   console.log('Added to cart:', item);
 };
@@ -216,61 +199,3 @@ font-weight: 600;}
 }
 
 </style>
-
-<!-- <template>
-  <v-container fluid>
-    <h2 class="text-center mb-4">محصولات ما</h2>
-
-    <v-carousel hide-delimiter-background>
-      <v-carousel-item v-for="(slide, index) in slides" :key="index">
-        <v-row justify="center" class="mx-4">
-          <v-col v-for="(item, idx) in slide.items" :key="idx" cols="12" sm="6" md="4">
-            <v-card class="mx-auto" outlined>
-              <v-img :src="item.image" height="200" contain />
-              <v-card-title class="text-h6 text-center">{{ item.title }}</v-card-title>
-              <v-card-subtitle class="text-center">{{ item.description }}</v-card-subtitle>
-              <v-card-actions>
-                <v-btn color="cyan" text @click="addToCart(item)">
-                  افزودن به سبد خرید
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-carousel-item>
-    </v-carousel>
-  </v-container>
-</template>
-
-<script setup>
-import { ref } from 'vue';
-
-// داده‌های نمونه برای اسلایدها
-const slides = ref([
-  {
-    items: [
-      { title: 'محصول 1', description: 'توضیحات محصول 1', image: 'https://via.placeholder.com/200' },
-      { title: 'محصول 2', description: 'توضیحات محصول 2', image: 'https://via.placeholder.com/200' },
-      { title: 'محصول 3', description: 'توضیحات محصول 3', image: 'https://via.placeholder.com/200' },
-    ],
-  },
-  {
-    items: [
-      { title: 'محصول 4', description: 'توضیحات محصول 4', image: 'https://via.placeholder.com/200' },
-      { title: 'محصول 5', description: 'توضیحات محصول 5', image: 'https://via.placeholder.com/200' },
-      { title: 'محصول 6', description: 'توضیحات محصول 6', image: 'https://via.placeholder.com/200' },
-    ],
-  },
-]);
-
-// تابع برای افزودن محصول به سبد خرید
-const addToCart = (item) => {
-  console.log('Added to cart:', item);
-};
-</script>
-
-<style scoped>
-.v-carousel-item {
-  padding: 20px; 
-}
-</style> -->
